@@ -295,9 +295,9 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Azure AI Benchmark Test")
-    parser.add_argument("--num-questions", type=int, default=2000,
-                       help="Number of questions to test (max 2000)")
-    parser.add_argument("--parallel", type=int, default=1000,
+    parser.add_argument("--num-questions", type=int, default=5000,
+                       help="Number of questions to test (max 5000)")
+    parser.add_argument("--parallel", type=int, default=150,
                        help="Number of parallel threads for requests")
     parser.add_argument("--result-file", type=str, default="benchmark_results.jsonl",
                        help="File to append benchmark results")
